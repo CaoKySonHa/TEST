@@ -11,24 +11,4 @@ public abstract class HoaDon {
         this.soLuong = soLuong;
         this.donGia = donGia;
     }
-
-    public String getMS() {
-        return maSo;
-    }
-
-    public abstract double tienKM();
-
-    public double thanhTien() {
-        return soLuong * donGia;
-    }
-
-    public double tongTien() {
-        return thanhTien() - tienKM();
-    }
-
-    public String toString() {
-        return "MaSo: " + maSo + ", hoten: " + hoTen + ", ngaylap: " + ngayLap + ", mathang: " + matHang
-                + ", so luong: " + soLuong + ", dongia: " + donGia + ", tong: "
-                + tongTien();
-    }
 }
